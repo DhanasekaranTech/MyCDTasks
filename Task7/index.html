@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        table {
+          border-collapse: collapse;
+          width: 10%;
+          
+        }
+        th, td {
+          border: 1px solid black;
+          padding: 8px;
+          text-align: left;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+      </style>
+</head>
+<body>
+    <h1>Add User Name to the table</h1>
+
+    <!-- form for get name input from  user-->
+    <form id="formUserName">
+        <label for="username">Enter your user name: </label>
+        <input type="text" id="username" name="username"><br>
+        <!-- <input type="submit" value="add user"> -->
+        <button type="submit">Add user name</button>
+    </form>
+
+
+    <!-- table for user name -->
+    <table id="table" style="margin-top: 30px;">
+        <tr>
+            <th>
+                User Name
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Dhanush
+            </td>
+        </tr>
+        <tr>
+            <td>
+                dinesh
+            </td>
+        </tr>
+        <tr>
+            <td>
+                sara
+            </td>
+        </tr>
+        
+    </table>
+
+    <script>
+       //adding addEventLisenter to the form.
+      document.getElementById("formUserName").addEventListener("submit",addUserName)
+
+       //create function for add user name.
+      function addUserName (event){
+        
+        //it prevent from refresh page
+       event.preventDefault();
+
+        const username = document.getElementById('username').value
+        if(username.trim() !== ""){
+            const table = document.getElementById('table');
+            const row = table.insertRow(-1);
+            const cell = row.insertCell(0);
+            cell.textContent = username;
+            document.getElementById('username').value = "";
+        }else{
+            alert("enter name")
+           // alert("please enter username");
+        }
+      }
+    </script>
+</body>
+
+</html>
