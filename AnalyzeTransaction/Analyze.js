@@ -1,7 +1,8 @@
-
+// create a function which have three parameters.
 function analyzeTransactions(transactions,startDate,endDate){
 const categoryTotals = {};
 
+//loop through an array
  transactions.forEach(transaction => {
     const{category,amount,date} = transaction;
 
@@ -18,7 +19,7 @@ const categoryTotals = {};
   return categoryTotals;
 }
 
-
+//for example
 const transactions = [
     { category: 'Groceries', amount: 50, date: new Date('2024-04-01') },
     { category: 'Dining', amount: 30, date: new Date('2024-04-05') },
@@ -31,4 +32,6 @@ const transactions = [
   const endDate = new Date('2024-04-30');
   
   const result = analyzeTransactions(transactions, startDate, endDate);
+
+  //print result
   console.log(result);

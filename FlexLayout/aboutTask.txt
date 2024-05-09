@@ -1,0 +1,3 @@
+about flex
+and its properties
+media query

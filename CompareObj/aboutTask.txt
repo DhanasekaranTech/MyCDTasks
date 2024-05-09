@@ -1,0 +1,3 @@
+create a obj
+compare obj
+for of loop

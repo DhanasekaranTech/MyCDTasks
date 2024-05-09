@@ -1,0 +1,4 @@
+class
+constructor
+instatiate obj
+get and set methode inside class

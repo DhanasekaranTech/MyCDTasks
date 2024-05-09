@@ -1,1 +1,10 @@
-about bootstrap
+learning concepts in this task are:
+
+bootstrap
+navbar class
+collapse class
+container
+row
+col
+card and its properties
+device sizing

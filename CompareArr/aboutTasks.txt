@@ -1,0 +1,3 @@
+create arr
+comapre arr
+iterate through arr

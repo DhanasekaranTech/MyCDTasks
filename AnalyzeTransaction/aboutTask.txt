@@ -1,0 +1,6 @@
+learning concepts in this task are:
+
+functions with parameters,arguments
+for each loop
+create obj inside an arr
+instantiate obj from inbuilt class
