@@ -28,6 +28,7 @@
 }
 .navbar ul li{
     margin-left: 20px;
+    
 }
 
 .header img{
@@ -63,11 +64,29 @@
     margin: 20px;
     padding: 15px;
 }
-@media (max-width:780px){
+
+
+footer img{
+    width: 100px;
+    margin: 20px;
+}
+ footer .container .icons{ 
+    display: flex;
+    justify-content: center;
+    
+ }
+ @media (max-width:780px){
     .header .container{
         flex-direction: column;
+        padding: 20px;
     }
     .boxes .container{
         flex-direction: column;
+    }
+    footer .container .icons{
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        
     }
 }
