@@ -21,6 +21,10 @@ class Car{
         this.year = year;   
     }
 
+    static greeting(){
+        console.log("Thanks for choosing us")
+    }
+
 }
 
 //instantiate an object of the Car class 
@@ -32,3 +36,4 @@ const info = MyCar.getInfo()
 
 
 console.log(info);
+Car.greeting();
