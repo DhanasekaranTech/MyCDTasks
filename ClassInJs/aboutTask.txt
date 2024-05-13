@@ -1,4 +1,4 @@
 class
 constructor
-instatiate obj
+instantiate obj
 get and set methode inside class
